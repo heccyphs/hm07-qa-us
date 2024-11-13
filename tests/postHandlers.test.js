@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 const config = require('../config');
 
 const requestBody = {products: [
@@ -17,7 +16,7 @@ test('should return status code 200 for a successful availability check', async 
             },
             body: JSON.stringify(requestBody)
          });
-         actualStatusCode = response.status;  // Assign the status code
+         actualStatusCode = response.status;
     } catch (error) {
         console.error(error);
     }

@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 const config = require('../config');
 
 test('Status code should be 200', async () => {
@@ -21,7 +20,6 @@ test('Should recieve expected response from server', async () => {
 			method: 'DELETE',
 		});
 		delResponse = await response.json();
-		console.log("Response Body", delResponse)
 	} catch (error) {
 		console.error(error);
 	}
